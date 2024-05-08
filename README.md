@@ -2,8 +2,6 @@
 ## Interface and User Experience Design
 ### Register account / Login into the app
 1. When user opens the app, they will be greeted with this home page:
- 
-Figure 7: Home page
 2. From home page, user can click on the ‘Login’ button to go into login page for authentication. This is what login page looks like:
   
 Figure 8: Login page
