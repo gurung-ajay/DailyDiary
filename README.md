@@ -1,5 +1,9 @@
 # Daily Diary
-## Interface and User Experience Design
+
+## About the app
+The "Daily Diary" web application represents a focused effort to streamline individual task management through a to-do list style feature. The app allows users to effortlessly create, mark as done, or delete tasks using a straightforward calendar interface. Throughout this endeavor, the primary goal has been to enhance personal organizational efficiency, providing a seamless and intuitive experience for users in their daily quest to stay organized.
+
+## Interface and Workflow
 ### Register account / Login into the app
 1. When user opens the app, they will be greeted with this home page:
 
