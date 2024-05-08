@@ -1,7 +1,22 @@
-# Daily Diary
+# Daily Diary App with Django
 
 ## About the app
-The "Daily Diary" web application represents a focused effort to streamline individual task management through a to-do list style feature. The app allows users to effortlessly create, mark as done, or delete tasks using a straightforward calendar interface. Throughout this endeavor, the primary goal has been to enhance personal organizational efficiency, providing a seamless and intuitive experience for users in their daily quest to stay organized.
+The "Daily Diary" web application created using django, represents a focused effort to streamline individual task management through a to-do list style feature. The app allows users to effortlessly create, mark as done, or delete tasks using a straightforward calendar interface. Throughout this endeavor, the primary goal has been to enhance personal organizational efficiency, providing a seamless and intuitive experience for users in their daily quest to stay organized.
+
+## Installation
+To install the app, follow the steps below:
+1. Clone the repository
+2. Install the dependencies for running the app. These are included in the file DailyDiaryProject/requirements.txt as:
+   asgiref==3.7.2
+   Django==4.2.5
+   sqlparse==0.4.4
+   typing_extensions==4.9.0
+   tzdata==2023.3
+   For installing run the command below in terminal:
+   * pip install -r requirements.txt
+3. Now run this file DailyDiaryProject/manage.py by running this command on terminal:
+   * py manage.py runserver
+ 
 
 ## App Demonstration
 ### Register account / Login into the app
