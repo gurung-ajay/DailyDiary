@@ -23,6 +23,7 @@ Figure 12: User page
 ### Create a new task
 1. To create a new task in to-do list, user has to click on the diary icon to open the diary. It will go back to the diary interface.
 2. From this interface, the user has to first click on the date from calendar. Then on the right page, the selected date along with the tasks created for that date will be displayed.
+   ![image](https://github.com/gurung-ajay/DailyDiary/assets/135496373/9ff78c2b-077b-4fd4-aa1e-2985d7fa9130)
 3. Then they have to click on the ‘+’ icon at the bottom right corner of the page. It will open up a prompt pop up at the top of the page saying ‘Enter task:’
 4. On the prompt, the user has to enter the task, for e.g. ‘Study for exam’, and press enter.
  ![image](https://github.com/gurung-ajay/DailyDiary/assets/135496373/1d655d55-5313-4079-904e-85cd93922d00)
