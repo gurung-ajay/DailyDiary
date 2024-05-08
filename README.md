@@ -19,7 +19,7 @@ To install the app, follow the steps below:
 3. To start the server, run the file DailyDiaryProject/manage.py by running this command on terminal:
    * py manage.py runserver
    
-   This will give an ip address:  http://127.0.0.1:8000/
+   This will give an ip address for localhost:  http://127.0.0.1:8000/
 4. Open the ip address in the browser and it will open the app
  
 
