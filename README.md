@@ -15,8 +15,10 @@ To install the app, follow the steps below:
    
    For installing run the command below in terminal:
    * pip install -r requirements.txt
-4. Now run the file DailyDiaryProject/manage.py by running this command on terminal:
+3. To start the server, run the file DailyDiaryProject/manage.py by running this command on terminal:
    * py manage.py runserver
+   This will give an ip address.
+4. Open the ip address in the browser and it will open the app
  
 
 ## App Demonstration
