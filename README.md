@@ -3,7 +3,7 @@
 ### Register account / Login into the app
 1. When user opens the app, they will be greeted with this home page:
 
- ![image](https://github.com/gurung-ajay/DailyDiary/assets/135496373/4fa47aa9-d103-4b72-adfc-bf45032c470a)
+   ![image](https://github.com/gurung-ajay/DailyDiary/assets/135496373/4fa47aa9-d103-4b72-adfc-bf45032c470a)
  
 2. From home page, user can click on the ‘Login’ button to go into login page for authentication. This is what login page looks like:
 
@@ -31,6 +31,7 @@
 2. From this interface, the user has to first click on the date from calendar. Then on the right page, the selected date along with the tasks created for that date will be displayed.
 
  ![image](https://github.com/gurung-ajay/DailyDiary/assets/135496373/9ff78c2b-077b-4fd4-aa1e-2985d7fa9130)
+
 4. Then they have to click on the ‘+’ icon at the bottom right corner of the page. It will open up a prompt pop up at the top of the page saying ‘Enter task:’
 5. On the prompt, the user has to enter the task, for e.g. ‘Study for exam’, and press enter.
  
