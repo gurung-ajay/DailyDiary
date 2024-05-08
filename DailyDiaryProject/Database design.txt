@@ -1,0 +1,18 @@
+user:
+firstName - CharField
+lastName - CharField
+email - EmailField
+password - CharField
+
+todo:
+user - Foreign Key(User)
+date - DateField
+todo_info - CharField
+completed - BooleanField(default=False)
+
+score_in_date:
+user - Foreign Key(User)
+date - DateField
+total_task - int
+task_completed - int
+rank - char

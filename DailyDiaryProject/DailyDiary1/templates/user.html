@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/CSS/user.css' %}">
+    <link rel="icon" href="{% static '/Multimedia/icon.png' %}" type="image/x-icon">
+    <title>User Profile</title>
+</head>
+<body>
+    <!--Side Navbar-->
+    <div class="sidebar">
+        <div class="side-nav">
+            <div class="user" onclick="location.href='{% url 'user' %}';">
+                <img src="{% static '/Multimedia/user_icon.jpg' %}" class="user-img">
+                <div>
+                    <h2>{{ user_info.first_name }} {{ user_info.last_name }}</h2>
+                    <p>{{ user_info.email }}</p>
+                </div>
+            </div>
+
+            <ul>
+                <li class='Diary' onclick="location.href='{% url 'diary' %}';"><img src="{% static '/Multimedia/diary_icon.png' %}" alt=""><p>Diary</p></li>
+            </ul>
+            
+            <ul id='LoggedOut' onclick="location.href='{% url 'home' %}';">
+                <li><img src="{% static '/Multimedia/logout_icon.png' %}" alt=""><p>Logout</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--User-->
+    <div class="app">
+        <div class="background">
+            <div class="user_info">
+                <img src="{% static '/Multimedia/user_icon.jpg' %}" class="user-img-in-app">
+            </div>
+            <div id="uid">UserID: {{ user_info.user_id }}</div>
+                <div class="labels">
+                    <ul>
+                        <li>First Name:</li>
+                        <li>Last Name:</li>
+                        <li>E-mail:</li>
+                        <li>Password:</li>
+                    </ul>
+                </div>
+                <div class="labelValues">
+                    <ul>
+                        <li><input type="text" id="userTextBox" value="{{ user_info.first_name }}"></li>
+                        <li><input type="text" id="userTextBox" value="{{ user_info.last_name }}"></li>
+                        <li><input type="text" id="userTextBox" value="{{ user_info.email }}"></li>
+                        <li><input type="text" id="userTextBox" value="********"></li>
+                    </ul>
+                </div>
+                <button id="saveChanges">Save Changes</button>
+        </div>
+        
+    </div>
+</body>
+</html>

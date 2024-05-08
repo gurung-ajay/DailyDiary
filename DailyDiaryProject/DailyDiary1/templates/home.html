@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/home.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
+    <link rel="icon" href="{% static 'Multimedia/icon.png' %}" type="image/x-icon">
+
+    <title>Daily Diary</title>
+</head>
+<body>
+    <!--These are the contents of the home page-->>
+    <div class="container">
+        <h1 id="heading">Daily Diary</h1>
+       
+        <p>
+            Introducing Daily Diary, the web app for effortless task management with a clean, simple, and easy-to-navigate UI. <br>
+            Create, mark as done, or delete tasks seamlessly through its intuitive calendar interface for a streamlined daily organization experience.
+        </p>
+    </div>
+    <button id="login-button">Login</button>
+    
+    
+    <!--This button takes user to login page-->>
+    <script>
+        const loginButton = document.getElementById('login-button');
+        loginButton.addEventListener('click', function() {
+            window.location.href = "{% url 'login' %}";
+        })
+
+    </script>
+</body>
+</html>

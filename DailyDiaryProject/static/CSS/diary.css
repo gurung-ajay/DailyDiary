@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Side Navbar CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    background: url('../Multimedia/diary_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    opacity: 0.95;
+}
+
+.user-img {
+    height: 7.81vh;
+    width: 4.41vw;
+    mix-blend-mode: multiply;
+}
+
+.side-nav {
+    width: 7vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 3.90625vh 1.10294vw ;
+    background: rgba(187, 187, 187, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 0.5s;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 4.41176vw;
+    padding: 1.30208vh;
+    font-size: 0.8125em;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user div {
+    display: none;
+}
+
+.user h2{
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.user-img {
+    width: 42px;
+    height: auto;
+    border-radius: 50%;
+}
+
+ul {
+    list-style: none;
+    padding: 0 15px;
+}
+
+ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+ul li img {
+    width: 40px;
+    margin-right: 0px;
+}
+
+ul li p {
+    white-space: nowrap;
+    display: none;
+}
+
+
+.side-nav:hover {
+    width: 220px;   
+}
+.side-nav:hover .user div {
+    display: block;
+}
+.side-nav:hover .user {
+    width: 100%;
+    background: rgba(143, 142, 142, 0.2);
+    backdrop-filter: blur(5px);
+}
+.side-nav:hover .user-img {
+    margin: 0;
+}
+.side-nav:hover ul li p {
+    display: block;
+}
+.side-nav:hover ul li img {
+    margin-right: 10px;
+}
+.side-nav:hover ul li {
+    justify-content: flex-start;
+}
+
+
+/* Diary CSS */
+.app {
+    display: flex;
+    width: 65vw; 
+    height: 72vh; 
+    background-color:  rgb(0, 0, 0);
+    justify-content: space-between;
+    padding: 20px;
+    transform: scale(1.2);
+    border-radius: 50%;
+    margin-top: 7%;
+    margin-left: 8%;
+    float: left;
+    color: #2b2a2a;
+
+    opacity: 0; /* Start with zero opacity */
+    animation: fade-in 1s ease-in-out forwards; /* Apply the fade-in animation */
+}
+@keyframes fade-in {
+    to {
+        opacity: 0.9; /* At the end of the animation, opacity becomes 1 */
+    }
+}
+
+
+.contents {
+    flex: 1;
+    height: 93%;
+    margin: auto;
+    border: 10px solid rgb(31, 31, 31);
+    float: left;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 10%;
+    padding: 20px;
+}
+
+.calendar {
+    height: 93%;
+    float: left;
+    width: auto;
+    margin: auto;
+    border: 10px solid rgb(31, 31, 31);
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+}
+
+
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgb(175, 174, 174);
+}
+
+.calendar-grid {
+    display: grid;
+    /* divide grid into 7 column with equal column size (for 7 days of the week) */
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-cell {
+    height: 5.85vh;
+    width: 3.68vw;
+    padding: 5px;
+    cursor: pointer;
+}
+.calendar-month-cell {
+    height: 5.85vh;
+    width: 3.68vw;
+    padding: 5px;
+    cursor: pointer;
+}
+.current-month-cell {
+    background-color: rgba(218, 219, 198, 1);
+}
+
+.selected-cell {
+    background-color: rgba(225, 235, 238, 1);
+    color: #fff;
+}
+
+.plus {
+    position: absolute;
+    bottom: 11%;
+    right: 4%;
+    width: 50px;
+    height: 50px;
+    background-color: #cacaca;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.nav {
+    position: absolute;
+    top: 0px;
+}
+
+#prevMonth{
+    cursor: pointer;
+}
+#nextMonth{
+    cursor: pointer;
+}
+
+.calendar-cell:hover {
+    background-color: rgba(218, 219, 198, 1);
+}
+
+
+#contentDate{
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgb(175, 174, 174);
+}
+
+
+.task-list .completed {
+    text-decoration: line-through;
+    color: #888; /* or any other color you prefer */
+}

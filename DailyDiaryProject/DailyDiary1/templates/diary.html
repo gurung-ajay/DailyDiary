@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/CSS/diary.css' %}">
+    <link rel="icon" href="{% static '/Multimedia/icon.png' %}" type="image/x-icon">
+    <title>Daily Diary</title>
+</head>
+<body class="fade-in">
+    <!--Side Navbar-->
+    <div class="sidebar">
+        <div class="side-nav">
+            <div class="user" onclick="location.href='{% url 'user' %}';">
+                <img src="{% static '/Multimedia/user_icon.jpg' %}" class="user-img">
+                <div>
+                    <h2>{{ user_info.first_name }} {{ user_info.last_name }}</h2>
+                    <p>{{ user_info.email }}</p>
+                </div>
+            </div>
+
+            <ul>
+                <li class='Diary' onclick="location.href='{% url 'diary' %}';"><img src="{% static '/Multimedia/diary_icon.png' %}" alt=""><p>Diary</p></li>
+            </ul>
+            
+            <ul id='LoggedOut' onclick="location.href='{% url 'home' %}';">
+                <li><img src="{% static '/Multimedia/logout_icon.png' %}" alt=""><p>Logout</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Diary-->
+    <div class="app">
+        <div class="calendar">
+            <div class="calendar-header">
+                <div id="prevMonth"><<</div>
+                <h2 id="currentMonthYear"></h2>
+                <div id="nextMonth">>></div>
+            </div>
+    
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Calendar cells will be dynamically added here -->
+            </div>
+        </div>
+
+        <div class="contents">
+            <div id="contentDate">
+            </div>
+            <div class="ToDo">
+                TO-DO's
+                <div id="tasks-container">
+                    <!-- Task list content goes here -->
+                </div>
+                <button class='plus'>+</button>
+            </div>
+            
+    </div>
+
+    <script src="{% static '/JS/diary.js' %}"></script>
+    <script>const USER_ID = {{ user.id }};</script>
+
+</body>
+</html>
