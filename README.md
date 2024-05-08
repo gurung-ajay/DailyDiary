@@ -2,6 +2,8 @@
 ## Interface and User Experience Design
 ### Register account / Login into the app
 1. When user opens the app, they will be greeted with this home page:
+ ![image](https://github.com/gurung-ajay/DailyDiary/assets/135496373/4fa47aa9-d103-4b72-adfc-bf45032c470a)
+ 
 2. From home page, user can click on the ‘Login’ button to go into login page for authentication. This is what login page looks like:
   
 Figure 8: Login page
