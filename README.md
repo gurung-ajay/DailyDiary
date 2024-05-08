@@ -13,7 +13,7 @@ To install the app, follow the steps below:
    * typing_extensions==4.9.0
    * tzdata==2023.3
    
-   For installing run the command below in terminal:
+   For installing them, run the command below in terminal:
    * pip install -r requirements.txt
 3. To start the server, run the file DailyDiaryProject/manage.py by running this command on terminal:
    * py manage.py runserver
